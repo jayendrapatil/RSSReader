@@ -1,0 +1,423 @@
+TRSS Reader
+v7
+r1
+cCheck dependencies
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004BEE0BFD0000000000000110
+t1273891837
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B9F103D00000000000001E5
+t1268715581
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AC100000000003B4B70
+t1268792001
+s3885936
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F26D2000000000036A650
+t1268721362
+s3581520
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F26B90000000000001355
+t1268721337
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B9F318D000000000000098F
+t1268724109
+s2447
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B9F32090000000002703230
+t1268724233
+s40907312
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/Availability.h
+c000000004B9F27C60000000000001A1A
+t1268721606
+s6682
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
+c000000004C05C1B10000000000000110
+t1275445681
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+c000000004BF4B7F900000000000001E5
+t1274329081
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFE06FA000000000034A850
+t1274939130
+s3450960
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFE07D200000000003E1EB0
+t1274939346
+s4071088
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFE07B10000000000001466
+t1274939313
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C04711400000000000009CD
+t1275359508
+s2509
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471FC0000000002D563E0
+t1275359740
+s47539168
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/Availability.h
+c000000004BF4D50E0000000000001A3B
+t1274336526
+s6715
+
+N/Projects/RSS Reader/Classes/RSS_ReaderAppDelegate.h
+c000000004C3494F900000000000001DC
+t1278514425
+s476
+i<UIKit/UIKit.h>
+
+N/Projects/RSS Reader/Classes/RSS_ReaderAppDelegate.m
+c000000004C3494F90000000000000AA9
+t1278514425
+s2729
+i"RSS_ReaderAppDelegate.h"
+i"RootViewController.h"
+
+N/Projects/RSS Reader/Classes/RootViewController.h
+c000000004C35E3D80000000000000223
+t1278600152
+s547
+i<UIKit/UIKit.h>
+
+N/Projects/RSS Reader/Classes/RootViewController.m
+c000000004C3638B90000000000002064
+t1278621881
+s8292
+i"RootViewController.h"
+
+N/Projects/RSS Reader/MainWindow.xib
+c000000004C3494F90000000000006000
+t1278514425
+s24576
+
+N/Projects/RSS Reader/RSS_Reader_Prefix.pch
+c000000004C3494F90000000000000146
+t1278514425
+s326
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Projects/RSS Reader/Resources-iPad/MainWindow-iPad.xib
+c000000004C34E48B0000000000005FBB
+t1278534795
+s24507
+
+N/Projects/RSS Reader/RootViewController.xib
+c000000004C34AEF200000000000045A0
+t1278521074
+s17824
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app.dSYM
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/Info.plist
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/MainWindow-iPad.nib
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/MainWindow.nib
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/PkgInfo
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/ResourceRules.plist
+t2
+s0
+
+N/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RootViewController.nib
+t2
+s0
+
+N/Projects/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS Reader.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Projects/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS_ReaderAppDelegate.o
+t2
+s0
+
+N/Projects/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RootViewController.o
+t2
+s0
+
+N/Projects/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Projects/RSS Reader/main.m
+c000000004C3494F9000000000000016C
+t1278514425
+s364
+i<UIKit/UIKit.h>
+
+N/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.h
+c000000004C3494F900000000000001DC
+t1278514425
+s476
+i<UIKit/UIKit.h>
+
+N/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m
+c000000004C3494F90000000000000AA9
+t1278514425
+s2729
+i"RSS_ReaderAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/satty/Documents/RSS Reader/Classes/RootViewController.h
+c000000004C34A2620000000000000210
+t1278517858
+s528
+i<UIKit/UIKit.h>
+
+N/Users/satty/Documents/RSS Reader/Classes/RootViewController.m
+c000000004C34AFE80000000000001F18
+t1278521320
+s7960
+i"RootViewController.h"
+
+N/Users/satty/Documents/RSS Reader/MainWindow.xib
+c000000004C3494F90000000000006000
+t1278514425
+s24576
+
+N/Users/satty/Documents/RSS Reader/RSS_Reader_Prefix.pch
+c000000004C3494F90000000000000146
+t1278514425
+s326
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/satty/Documents/RSS Reader/RootViewController.xib
+c000000004C34AEF200000000000045A0
+t1278521074
+s17824
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app.dSYM
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/Info.plist
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/MainWindow.nib
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/PkgInfo
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/ResourceRules.plist
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RootViewController.nib
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS Reader
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS Reader.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS_ReaderAppDelegate.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RootViewController.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/main.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RSS Reader
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RSS Reader.LinkFileList
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RSS_ReaderAppDelegate.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RootViewController.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/main.o
+t2
+s0
+
+N/Users/satty/Documents/RSS Reader/main.m
+c000000004C3494F9000000000000016C
+t1278514425
+s364
+i<UIKit/UIKit.h>
+
+N/var/folders/Lh/Lha1JHSrGc0YpSp5UVqFiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-dzidfnozyefkgegmgnrruxtdkwru/RSS_Reader_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-cdnvejaxitdcwidnardulxhwtflx/RSS_Reader_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-emleucehsrybaiefpolgngcgjatk/RSS_Reader_Prefix.pch.gch
+t2
+s0
+
+NRSS_Reader-Info.plist
+c000000004C34E48B00000000000003CE
+t1278534795
+s974
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies300214211#300214211#0(133"[BEROR]Code Sign error: The identity 'iPhone Developer' doesn't match any valid certificate/private key pair in the default keychain1(4@125"Code Sign error: The identity 'iPhone Developer' doesn't match any valid certificate/private key pair in the default keychain300214211#18446744073709551615#0#0(1@0"0(0#1#0"8616612896#0"0#
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS_ReaderAppDelegate.o" "/Projects/RSS Reader/Classes/RSS_ReaderAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS_ReaderAppDelegate.o" "/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RootViewController.o" "/Projects/RSS Reader/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RootViewController.o" "/Users/satty/Documents/RSS Reader/Classes/RootViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/main.o" "/Projects/RSS Reader/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/main.o" "/Users/satty/Documents/RSS Reader/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RSS_ReaderAppDelegate.o" "/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RootViewController.o" "/Users/satty/Documents/RSS Reader/Classes/RootViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC "build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/main.o" "/Users/satty/Documents/RSS Reader/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB "/Projects/RSS Reader/MainWindow.xib"
+r0
+
+CCompileXIB "/Projects/RSS Reader/Resources-iPad/MainWindow-iPad.xib"
+r0
+
+CCompileXIB "/Projects/RSS Reader/RootViewController.xib"
+r0
+
+CCompileXIB "/Users/satty/Documents/RSS Reader/MainWindow.xib"
+r0
+
+CCompileXIB "/Users/satty/Documents/RSS Reader/RootViewController.xib"
+r0
+
+CCpResource "build/Debug-iphoneos/RSS Reader.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+r0
+
+CCpResource "build/Debug-iphoneos/RSS Reader.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+r0
+
+CCreateUniversalBinary "/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader" normal "armv6 armv7"
+r0
+
+CGenerateDSYMFile "/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app.dSYM" "/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader"
+r0
+
+CGenerateDSYMFile "/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app.dSYM" "/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader"
+r0
+
+CLd "/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/RSS Reader" normal armv6
+r0
+
+CLd "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv6/RSS Reader" normal armv6
+r0
+
+CLd "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphoneos/RSS Reader.build/Objects-normal/armv7/RSS Reader" normal armv7
+r0
+
+CProcessInfoPlistFile "/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app/Info.plist" RSS_Reader-Info.plist
+r0
+
+CProcessInfoPlistFile "/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app/Info.plist" RSS_Reader-Info.plist
+r0
+
+CProcessPCH /var/folders/Lh/Lha1JHSrGc0YpSp5UVqFiU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-dzidfnozyefkgegmgnrruxtdkwru/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-cdnvejaxitdcwidnardulxhwtflx/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-emleucehsrybaiefpolgngcgjatk/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch "/Projects/RSS Reader/build/Debug-iphoneos/RSS Reader.app"
+r0
+
+CTouch "/Users/satty/Documents/RSS Reader/build/Debug-iphoneos/RSS Reader.app"
+r0
+
