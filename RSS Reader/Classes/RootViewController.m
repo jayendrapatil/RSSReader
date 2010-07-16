@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "DetailViewController.h"
 
 @implementation RootViewController
 
@@ -152,8 +152,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	 //DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-	 DetailViewController* retController = [DetailViewController detailViewControllerWithItem:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]]; 
-	 [[self navigationController] pushViewController:retController animated:YES];
+	
+	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
+
+	NSString *selectedTitle = [[stories objectAtIndex:storyIndex] objectForKey: @"title"];
+	NSString *selectedLink = [[stories objectAtIndex:storyIndex] objectForKey:@"link"];
+	//DetailViewController* retController = [DetailViewController detailViewControllerWithItem:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]]; 
+	DetailViewController *retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]]; 
+	retController.selectedTitle = selectedTitle;
+	retController.selectedLink = selectedLink;
+	
+	[self.navigationController pushViewController:retController animated:YES];
+	
+	//DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
+	//dvController.selectedTitle = selectedTitle;
+	//dvController.selectedSummary = selectedSummary;
+	
+	//[self.navigationController pushViewController:dvController animated:YES];
+	[retController release];
+	retController = nil;
+	
 	 //[retController release];
 }
 
