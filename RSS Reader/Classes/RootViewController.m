@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self setTitle:@"Feeds"];
+	self.navigationItem.title = @"Best of McKinsey Quarterly";
 }
 
 /*
@@ -98,6 +98,13 @@
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+	return @"Latest articles from eQ";
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+	return @"Send us feedback!";
+}
 
 /*
 // Override to support conditional editing of the table view.
