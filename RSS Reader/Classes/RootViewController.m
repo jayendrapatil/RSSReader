@@ -106,73 +106,24 @@
 	return @"Send us feedback!";
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-
-#pragma mark -
-#pragma mark Table view delegate
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	 //DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-	
-	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
 
-	NSString *selectedTitle = [[stories objectAtIndex:storyIndex] objectForKey: @"title"];
-	NSString *selectedLink = [[stories objectAtIndex:storyIndex] objectForKey:@"link"];
-	//DetailViewController* retController = [DetailViewController detailViewControllerWithItem:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]]; 
-	DetailViewController *retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:[NSBundle mainBundle]]; 
-	retController.selectedTitle = selectedTitle;
-	retController.selectedLink = selectedLink;
+	UIWebView *rssWebView = [[UIWebView alloc] init];
+	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
+	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
+	[rssWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
+	rssWebView.scalesPageToFit = YES;
 	
-	[self.navigationController pushViewController:retController animated:YES];
 	
-	//DetailViewController *dvController = [[DetailViewController alloc] initWithNibName:@"DetailView" bundle:[NSBundle mainBundle]];
-	//dvController.selectedTitle = selectedTitle;
-	//dvController.selectedSummary = selectedSummary;
+	UIViewController *thisVC = [[UIViewController alloc] init];
+	thisVC.view = rssWebView;
+	thisVC.title = [[stories objectAtIndex:indexPath.row]
+					objectForKey:@"title"];
 	
-	//[self.navigationController pushViewController:dvController animated:YES];
-	[retController release];
-	retController = nil;
+	[self.navigationController pushViewController:thisVC animated:YES];
 	
-	 //[retController release];
+	[rssWebView release];
+	[thisVC release];
 }
 
 
