@@ -8,7 +8,6 @@
 
 #import "DetailViewController.h"
 
-
 @implementation DetailViewController
 @synthesize webView, item, link ;
 /*
@@ -28,7 +27,7 @@
 	//NSLog([selectedItem objectForKey: @"link"]);
 
 	return [retController autorelease];
-}
+} 
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
