@@ -7,7 +7,6 @@
 //
 
 #import "RootViewController.h"
-#import "DetailViewController.h"
 
 @implementation RootViewController
 
@@ -21,46 +20,15 @@
 	self.navigationItem.title = @"Best of McKinsey Quarterly";
 }
 
-/*
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-*/
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 	if ([stories count] == 0) {
-		//NSString * path = @"http://feeds.feedburner.com/TheAppleBlog";
 		NSString * path = @"http://rss.mckinseyquarterly.com/f/100003s2f3fmpgm5lb0.rss";
 		[self parseXMLFileAtURL:path];
 	}
 	cellSize = CGSizeMake([newsTable bounds].size.width, 100);
 }
 
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-	[super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-	[super viewDidDisappear:animated];
-}
-*/
-
-/*
- // Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations.
-	return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
- */
-
-
-#pragma mark -
-#pragma mark Table view data source
-
-// Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -86,6 +54,7 @@
     
 	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
 	[[cell textLabel] setText:[[stories objectAtIndex:storyIndex] objectForKey: @"title"]];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	
 	NSString* imageURL = [[stories objectAtIndex:storyIndex] objectForKey: @"image"];
 	NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
@@ -131,15 +100,10 @@
 #pragma mark Memory management
 
 - (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Relinquish ownership any cached data, images, etc that aren't in use.
 }
 
 - (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
 }
 
 - (void)parseXMLFileAtURL:(NSString	*)URL {
@@ -179,9 +143,7 @@
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName { 
-	NSLog(@"ended element: %@", elementName); 
 	if ([elementName isEqualToString:@"item"]) { 
-		// save values to an item, then store that item into the array... 
 		[item setObject:currentTitle forKey:@"title"]; 
 		[item setObject:currentLink forKey:@"link"]; 
 		[item setObject:currentSummary forKey:@"summary"]; 
@@ -192,8 +154,6 @@
 } 
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string { 
-	//NSLog(@"found characters: %@", string); 
-	// save the characters for the current item... 
 	if ([currentElement isEqualToString:@"title"]) { 
 		[currentTitle appendString:string]; 
 	} else if ([currentElement isEqualToString:@"link"]) { 
