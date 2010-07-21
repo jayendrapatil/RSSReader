@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "ProceduralExampleViewController.h"
 
 @implementation RootViewController
 
@@ -76,7 +77,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
+	UIViewController *viewController;
+	
+	
 	UIWebView *rssWebView = [[UIWebView alloc] init];
 	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
 	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
@@ -93,6 +96,16 @@
 	
 	[rssWebView release];
 	[thisVC release];
+	/*
+	// code starts for curling
+	viewController = [[[ProceduralExampleViewController alloc] init] autorelease];
+	[self.navigationController pushViewController:viewController animated:YES];
+	// code ends for curling
+	*/ 
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES; 	
 }
 
 
