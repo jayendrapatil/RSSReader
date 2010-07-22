@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "ProceduralExampleViewController.h"
+#import "CustomCell.h" 
 
 @implementation RootViewController
 
@@ -34,6 +35,11 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tblView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{   CGFloat rowHeight = 80;
+    return rowHeight;
+}
+
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -44,26 +50,32 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *MyIdentifier = @"MyIdentifier";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-    if (cell == nil) {
-        //cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:MyIdentifier] autorelease];
-		
-    }
-    
-	int storyIndex = [indexPath indexAtPosition: [indexPath length] - 1];
-	[[cell textLabel] setText:[[stories objectAtIndex:storyIndex] objectForKey: @"title"]];
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	static NSString *CustomCellIdentifier = @"CustomCellIdentifier ";
 	
-	NSString* imageURL = [[stories objectAtIndex:storyIndex] objectForKey: @"image"];
+	CustomCell *cell = (CustomCell *)[tableView
+									  dequeueReusableCellWithIdentifier: CustomCellIdentifier];
+	if (cell == nil) {
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
+													 owner:self options:nil];
+		for (id oneObject in nib)
+			if ([oneObject isKindOfClass:[CustomCell class]])
+				cell = (CustomCell *)oneObject;
+	}
+	NSUInteger row = [indexPath row];
+	NSDictionary *rowData = [stories objectAtIndex:row];
+	cell.colorLabel.text = [rowData objectForKey:@"summary"];
+	cell.nameLabel.text = [rowData objectForKey:@"title"];
+	
+	NSString* imageURL = [rowData objectForKey: @"image"];
 	NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
 	UIImage* image = [[UIImage alloc] initWithData:imageData];
-	[[cell imageView] setImage:image];
+	
+	cell.thumbnailImage.image = image ;
+	
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	
 	[imageData release];
 	[image release];
-	
 	
     return cell;
 }
@@ -171,7 +183,7 @@
 		[currentTitle appendString:string]; 
 	} else if ([currentElement isEqualToString:@"link"]) { 
 		[currentLink appendString:string]; 
-	} else if ([currentElement isEqualToString:@"description"]) { 
+	} else if ([currentElement isEqualToString:@"media:description"]) { 
 		[currentSummary appendString:string]; 
 	} else if ([currentElement isEqualToString:@"pubDate"]) { 
 		[currentDate appendString:string]; 
