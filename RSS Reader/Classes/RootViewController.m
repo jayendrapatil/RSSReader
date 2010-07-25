@@ -89,8 +89,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	UIViewController *viewController;
-	
 	
 	UIWebView *rssWebView = [[UIWebView alloc] init];
 	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];

@@ -1,273 +1,0 @@
-TRSS Reader
-v7
-r0
-t300213887.884728
-cCheck dependencies
-cProcessInfoPlistFile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/Info.plist" RSS_Reader-Info.plist
-cCompileXIB "/Users/satty/Documents/RSS Reader/MainWindow.xib"
-cCompileXIB "/Users/satty/Documents/RSS Reader/RootViewController.xib"
-cProcessPCH /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/main.o" "/Users/satty/Documents/RSS Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o" "/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RootViewController.o" "/Users/satty/Documents/RSS Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader" normal i386
-cGenerateDSYMFile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app.dSYM" "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader"
-cTouch "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk
-c000000004C23A1FB0000000000000132
-t1277403643
-s306
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004BFDFE39000000000027C7D0
-t1274936889
-s2607056
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004BFDFE7C000000000029D5D0
-t1274936956
-s2741712
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004BFDFE6E0000000000001466
-t1274936942
-s5222
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004C0470BB00000000000009CD
-t1275359419
-s2509
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004C0471620000000001D47210
-t1275359586
-s30700048
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/include/Availability.h
-c000000004BF4CBF90000000000001A3B
-t1274334201
-s6715
-
-N/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.h
-c000000004C3494F900000000000001DC
-t1278514425
-s476
-i<UIKit/UIKit.h>
-
-N/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m
-c000000004C3494F90000000000000AA9
-t1278514425
-s2729
-i"RSS_ReaderAppDelegate.h"
-i"RootViewController.h"
-
-N/Users/satty/Documents/RSS Reader/Classes/RootViewController.h
-c000000004C34A2620000000000000210
-t1278517858
-s528
-i<UIKit/UIKit.h>
-
-N/Users/satty/Documents/RSS Reader/Classes/RootViewController.m
-c000000004C34AE9A0000000000001EC3
-t1278520986
-s7875
-i"RootViewController.h"
-
-N/Users/satty/Documents/RSS Reader/MainWindow.xib
-c000000004C3494F90000000000006000
-t1278514425
-s24576
-
-N/Users/satty/Documents/RSS Reader/RSS_Reader_Prefix.pch
-c000000004C3494F90000000000000146
-t1278514425
-s326
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/satty/Documents/RSS Reader/RootViewController.xib
-c000000004C34AEF200000000000045A0
-t1278521074
-s17824
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app
-t1278521087
-s238
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app.dSYM
-t1278521087
-s102
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/Info.plist
-t1278521085
-s603
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/MainWindow.nib
-t1278521085
-s1512
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/PkgInfo
-t1278521085
-s8
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader
-t1278521087
-s25608
-
-N/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RootViewController.nib
-t1278521085
-s1021
-
-N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS Reader.LinkFileList
-c000000004C34AEFD0000000000000190
-t1278521085
-s400
-
-N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o
-t1278521087
-s49544
-
-N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RootViewController.o
-t1278521087
-s59436
-
-N/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/main.o
-t1278521087
-s6292
-
-N/Users/satty/Documents/RSS Reader/main.m
-c000000004C3494F9000000000000016C
-t1278514425
-s364
-i<UIKit/UIKit.h>
-
-N/var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch.gch
-t1278521087
-s15232016
-
-NRSS_Reader-Info.plist
-c000000004C3494F9000000000000038D
-t1278514425
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies300213885#300213885#0(0"0(0#1#0"3343187568374212096#0"0#
-
-CCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o" "/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s300213887.286002
-e300213887.465979
-r1
-xCompileC
-xbuild/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o
-x/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@73"Compile /Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m300213887#300213887#0(0"0(0#0#65"/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m8616255168#1970"    cd "/Users/satty/Documents/RSS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-generated-files.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-own-target-headers.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-all-target-headers.hmap" -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-project-headers.hmap" "-F/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" "-I/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/include" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources/i386" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources" -include /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch -c "/Users/satty/Documents/RSS Reader/Classes/RSS_ReaderAppDelegate.m" -o "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS_ReaderAppDelegate.o"0#
-
-CCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RootViewController.o" "/Users/satty/Documents/RSS Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s300213887.441670
-e300213887.536693
-r1
-xCompileC
-xbuild/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RootViewController.o
-x/Users/satty/Documents/RSS Reader/Classes/RootViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController viewDidAppear:]':
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: 'RootViewController' may not respond to '-parseXMLFileAtURL:'
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: (Messages without a matching method signature
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: will be assumed to return 'id' and accept
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: '...' as arguments.)
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:90: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController parseXMLFileAtURL:]':
-o/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:185: warning: class 'RootViewController' does not implement the 'NSXMLParserDelegate' protocol
-lSLF07#2@70"Compile /Users/satty/Documents/RSS Reader/Classes/RootViewController.m300213887#300213887#0(1274"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController viewDidAppear:]':/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: 'RootViewController' may not respond to '-parseXMLFileAtURL:'/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: (Messages without a matching method signature/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: will be assumed to return 'id' and accept/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:37: warning: '...' as arguments.)/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:90: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)/Users/satty/Documents/RSS Reader/Classes/RootViewController.m: In function '-[RootViewController parseXMLFileAtURL:]':/Users/satty/Documents/RSS Reader/Classes/RootViewController.m:185: warning: class 'RootViewController' does not implement the 'NSXMLParserDelegate' protocol4(22@61"'RootViewController' may not respond to '-parseXMLFileAtURL:'300213887#116#138#0(6@62"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m300213786#37#0#37#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)300213887#254#122#0(6@62"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m300213786#37#0#37#0#0"0(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:211)300213887#725#271#0(6@62"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m300213786#90#0#90#0#33"'*' is deprecated (declared at *)0(22@80"Class 'RootViewController' does not implement the 'NSXMLParserDelegate' protocol300213887#1116#158#0(6@62"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m300213786#185#0#185#0#45"class '*' does not implement the '*' protocol0(0#0#62"/Users/satty/Documents/RSS Reader/Classes/RootViewController.m8617241728#1964"    cd "/Users/satty/Documents/RSS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-generated-files.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-own-target-headers.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-all-target-headers.hmap" -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-project-headers.hmap" "-F/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" "-I/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/include" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources/i386" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources" -include /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch -c "/Users/satty/Documents/RSS Reader/Classes/RootViewController.m" -o "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RootViewController.o"0#
-
-CCompileC "build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/main.o" "/Users/satty/Documents/RSS Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
-s300213887.284372
-e300213887.441568
-r1
-xCompileC
-xbuild/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/main.o
-x/Users/satty/Documents/RSS Reader/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@48"Compile /Users/satty/Documents/RSS Reader/main.m300213887#300213887#0(0"0(0#0#40"/Users/satty/Documents/RSS Reader/main.m8590295584#1928"    cd "/Users/satty/Documents/RSS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-generated-files.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-own-target-headers.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-all-target-headers.hmap" -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-project-headers.hmap" "-F/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" "-I/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/include" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources/i386" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources" -include /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch -c "/Users/satty/Documents/RSS Reader/main.m" -o "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/main.o"0#
-
-CCompileXIB "/Users/satty/Documents/RSS Reader/MainWindow.xib"
-s300213885.179004
-e300213885.697894
-r1
-xCompileXIB
-x/Users/satty/Documents/RSS Reader/MainWindow.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@25"CompileXIB MainWindow.xib300213885#300213885#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#48"/Users/satty/Documents/RSS Reader/MainWindow.xib8615493632#564"    cd "/Users/satty/Documents/RSS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/MainWindow.nib" "/Users/satty/Documents/RSS Reader/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
-
-CCompileXIB "/Users/satty/Documents/RSS Reader/RootViewController.xib"
-s300213885.181388
-e300213885.680496
-r1
-xCompileXIB
-x/Users/satty/Documents/RSS Reader/RootViewController.xib
-oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
-lSLF07#2@33"CompileXIB RootViewController.xib300213885#300213885#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#56"/Users/satty/Documents/RSS Reader/RootViewController.xib8616870464#580"    cd "/Users/satty/Documents/RSS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RootViewController.nib" "/Users/satty/Documents/RSS Reader/RootViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk0#
-
-CGenerateDSYMFile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app.dSYM" "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader"
-s300213887.811325
-e300213887.861314
-r1
-xGenerateDSYMFile
-x/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app.dSYM
-x/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader
-lSLF07#2@122"GenerateDSYMFile "build/Debug-iphonesimulator/RSS Reader.app.dSYM" "build/Debug-iphonesimulator/RSS Reader.app/RSS Reader"300213887#300213887#0(0"0(0#0#87"/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader8606437728#383"    cd "/Users/satty/Documents/RSS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader" -o "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app.dSYM"0#
-
-CLd "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader" normal i386
-s300213887.536781
-e300213887.811202
-r1
-xLd
-x/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader
-xnormal
-xi386
-lSLF07#2@92"Link /Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader300213887#300213887#0(0"0(0#0#0"8616903680#900"    cd "/Users/satty/Documents/RSS Reader"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk "-L/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" "-F/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" -filelist "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/Objects-normal/i386/RSS Reader.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/RSS Reader"0#
-
-CProcessInfoPlistFile "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/Info.plist" RSS_Reader-Info.plist
-s300213885.154047
-e300213885.178890
-r1
-xProcessInfoPlistFile
-x/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/Info.plist
-xRSS_Reader-Info.plist
-lSLF07#2@29"Process RSS_Reader-Info.plist300213885#300213885#0(0"0(0#0#55"/Users/satty/Documents/RSS Reader/RSS_Reader-Info.plist7525630621066290176#479"    cd "/Users/satty/Documents/RSS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility RSS_Reader-Info.plist -genpkginfo "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app/Info.plist"0#
-
-CProcessPCH /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch.gch RSS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s300213885.698090
-e300213887.284088
-r1
-xProcessPCH
-x/var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch.gch
-xRSS_Reader_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@32"Precompile RSS_Reader_Prefix.pch300213885#300213887#0(0"0(0#0#55"/Users/satty/Documents/RSS Reader/RSS_Reader_Prefix.pch8617070304#1820"    cd "/Users/satty/Documents/RSS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30200 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-generated-files.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-own-target-headers.hmap" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-all-target-headers.hmap" -iquote "/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/RSS Reader-project-headers.hmap" "-F/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator" "-I/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/include" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources/i386" "-I/Users/satty/Documents/RSS Reader/build/RSS Reader.build/Debug-iphonesimulator/RSS Reader.build/DerivedSources" -c "/Users/satty/Documents/RSS Reader/RSS_Reader_Prefix.pch" -o /var/folders/XO/XOZL2AyfHmSopCbazhydYk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/RSS_Reader_Prefix-eqngbtwyrgzfcugsputeuhisfkxw/RSS_Reader_Prefix.pch.gch0#
-
-CTouch "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app"
-s300213887.861403
-e300213887.884599
-r1
-xTouch
-x/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app
-lSLF07#2@82"Touch /Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app300213887#300213887#0(0"0(0#0#0"8617321920#275"    cd "/Users/satty/Documents/RSS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/satty/Documents/RSS Reader/build/Debug-iphonesimulator/RSS Reader.app"0#
-
