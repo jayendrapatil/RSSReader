@@ -1,0 +1,9 @@
+1. Set up git on local http://help.github.com/
+2. Open terminal and execute 
+	git clone git@github.com:Jayendra/RSSReader.git
+3. Make changes in the Repository
+	git add file_name - If adding new files
+	git status - To check for the modfication
+	git commit -a -m "Commit Message"
+	git push origin master
+		git remote add origin git@github.com:Jayendra/RSSReader.git - If error is thrown for origin not found
