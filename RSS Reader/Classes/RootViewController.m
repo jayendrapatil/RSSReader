@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "ProceduralExampleViewController.h"
 #import "CustomCell.h" 
+#import "DetailViewController.h"
 
 @implementation RootViewController
 
@@ -90,22 +91,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	UIWebView *rssWebView = [[UIWebView alloc] init];
-	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
-	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
-	[rssWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
-	rssWebView.scalesPageToFit = YES;
+//	UIWebView *rssWebView = [[UIWebView alloc] init];
+//	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
+//	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
+//	[rssWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
+//	rssWebView.scalesPageToFit = YES;
+//	
+//	
+//	UIViewController *thisVC = [[UIViewController alloc] init];
+//	thisVC.view = rssWebView;
+//	thisVC.title = [[stories objectAtIndex:indexPath.row]
+//					objectForKey:@"title"];
+//	
+//	[self.navigationController pushViewController:thisVC animated:YES];
+//	
+//	[rssWebView release];
+//	[thisVC release];
 	
+	DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+	retController.title = [[stories objectAtIndex:indexPath.row] objectForKey:@"title"];
+	[retController setLink:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]];
+	[[self navigationController] pushViewController:retController animated:YES];
+	[retController release];
 	
-	UIViewController *thisVC = [[UIViewController alloc] init];
-	thisVC.view = rssWebView;
-	thisVC.title = [[stories objectAtIndex:indexPath.row]
-					objectForKey:@"title"];
-	
-	[self.navigationController pushViewController:thisVC animated:YES];
-	
-	[rssWebView release];
-	[thisVC release];
 	/*
 	// code starts for curling
 	viewController = [[[ProceduralExampleViewController alloc] init] autorelease];

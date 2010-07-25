@@ -78,7 +78,7 @@
 							<object class="IBUILabel" id="823201773">
 								<reference key="NSNextResponder" ref="85572992"/>
 								<int key="NSvFlags">302</int>
-								<string key="NSFrame">{{122, 46}, {165, 20}}</string>
+								<string key="NSFrame">{{122, 37}, {165, 35}}</string>
 								<reference key="NSSuperview" ref="85572992"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -267,7 +267,7 @@
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">CustomCell.h</string>
+						<string key="minorKey">Classes/CustomCell.h</string>
 					</object>
 				</object>
 			</object>

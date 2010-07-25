@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B35B68F11FCF86F00DED25E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B35B68D11FCF86F00DED25E /* DetailViewController.m */; };
+		1B35B69011FCF86F00DED25E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B35B68E11FCF86F00DED25E /* DetailViewController.xib */; };
 		1B93188D11FCDF9500A69D5F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B93188C11FCDF9500A69D5F /* CustomCell.m */; };
 		1B93189211FCDFFC00A69D5F /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B93189111FCDFFC00A69D5F /* CustomCell.xib */; };
 		1D3623260D0F684500981E51 /* RSS_ReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* RSS_ReaderAppDelegate.m */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B35B68C11FCF86F00DED25E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1B35B68D11FCF86F00DED25E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1B35B68E11FCF86F00DED25E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Classes/DetailViewController.xib; sourceTree = "<group>"; };
 		1B93188B11FCDF9500A69D5F /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		1B93188C11FCDF9500A69D5F /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		1B93189111FCDFFC00A69D5F /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
@@ -63,6 +68,8 @@
 				1D3623250D0F684500981E51 /* RSS_ReaderAppDelegate.m */,
 				1B93188B11FCDF9500A69D5F /* CustomCell.h */,
 				1B93188C11FCDF9500A69D5F /* CustomCell.m */,
+				1B35B68C11FCF86F00DED25E /* DetailViewController.h */,
+				1B35B68D11FCF86F00DED25E /* DetailViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1B35B68E11FCF86F00DED25E /* DetailViewController.xib */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* RSS_Reader-Info.plist */,
@@ -179,6 +187,7 @@
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				56BE431C11E51C0B009A574C /* MainWindow-iPad.xib in Resources */,
 				1B93189211FCDFFC00A69D5F /* CustomCell.xib in Resources */,
+				1B35B69011FCF86F00DED25E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +202,7 @@
 				1D3623260D0F684500981E51 /* RSS_ReaderAppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				1B93188D11FCDF9500A69D5F /* CustomCell.m in Sources */,
+				1B35B68F11FCF86F00DED25E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
