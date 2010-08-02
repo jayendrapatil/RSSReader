@@ -11,6 +11,7 @@
 #import "CustomCell.h" 
 #import "DetailViewController.h"
 
+
 @implementation RootViewController
 
 
@@ -109,7 +110,7 @@
 //	[thisVC release];
 	
 	DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-	retController.title = [[stories objectAtIndex:indexPath.row] objectForKey:@"title"];
+	retController.title = [[stories objectAtIndex:indexPath.row] objectForKey:@"title"];		
 	[retController setLink:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]];
 	[[self navigationController] pushViewController:retController animated:YES];
 	[retController release];

@@ -9,7 +9,6 @@
 #import "DetailViewController.h"
 
 
-
 @implementation DetailViewController
 @synthesize webView, link ;
 
@@ -45,6 +44,7 @@
 	
 	//NSString *urlString = @"http://www.mckinseyquarterly.com/Economic_Studies/Country_Reports/Indias_urbanization_A_closer_look_2640?gp=1";
 	NSString *encodedUrl = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	
 	webView.scalesPageToFit = YES ;
 	[webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
 	[webView release];
@@ -66,12 +66,13 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+
+
 - (void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
 
 - (void)dealloc {
     [super dealloc];
