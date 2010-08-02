@@ -18,7 +18,6 @@
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView ;
-@property (nonatomic, retain) IBOutlet UILabel *lblText;
 @property (nonatomic, retain) NSString *link ;
 
 @end

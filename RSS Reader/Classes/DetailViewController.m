@@ -10,7 +10,7 @@
 
 
 @implementation DetailViewController
-@synthesize webView, link ;
+@synthesize webView, link;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -45,6 +45,11 @@
 	//NSString *urlString = @"http://www.mckinseyquarterly.com/Economic_Studies/Country_Reports/Indias_urbanization_A_closer_look_2640?gp=1";
 	NSString *encodedUrl = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	
+	NSURL *url = [NSURL URLWithString:encodedUrl];
+	NSError *theNetworkError;
+	NSString *content = [NSString stringWithContentsOfURL:url encoding:NSASCIIStringEncoding error:&theNetworkError];
+	//lblText.text = content;
+	NSLog(@"server returned data: >|%@|<", content);
 	webView.scalesPageToFit = YES ;
 	[webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
 	[webView release];
@@ -75,6 +80,7 @@
 }
 
 - (void)dealloc {
+	[lblText release];
     [super dealloc];
 }
 
