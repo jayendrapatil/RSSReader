@@ -10,6 +10,7 @@
 #import "ProceduralExampleViewController.h"
 #import "CustomCell.h" 
 #import "DetailViewController.h"
+#import "Reachability.h"
 
 
 @implementation RootViewController
@@ -141,7 +142,24 @@
 - (void)parseXMLFileAtURL:(NSString	*)URL {
 	stories = [[NSMutableArray alloc] init];
 	NSURL *xmlURL = [NSURL URLWithString:URL];
-	rssParser = [[NSXMLParser alloc] initWithContentsOfURL:xmlURL];
+	
+	NSString *applicationDocumentsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+	NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"feeds.xml"];
+	
+	Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+	NetworkStatus internetStatus = [r currentReachabilityStatus];
+	
+	if (internetStatus != NotReachable) {
+		NSLog(@"Downloading from the web");
+		// Store XML feed offline
+		NSData *data = [NSData dataWithContentsOfURL:xmlURL];
+		[data writeToFile:storePath atomically:TRUE];
+	}
+	
+	// Retrieve XML data from File Path
+	NSData *storedContents = [[[NSData alloc] initWithContentsOfFile:storePath] autorelease];
+	
+	rssParser = [[NSXMLParser alloc] initWithData:storedContents];
 	[rssParser setDelegate:self];
 	[rssParser setShouldProcessNamespaces:NO];
 	[rssParser setShouldReportNamespacePrefixes:NO];

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		18FF4FD6120759BA00BEEADD /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FF4FD5120759BA00BEEADD /* logo1.png */; };
+		1B033FF91209208A00F9B984 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B033FF81209208A00F9B984 /* Reachability.m */; };
+		1B033FFC1209209700F9B984 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B033FFB1209209700F9B984 /* SystemConfiguration.framework */; };
 		1B35B68F11FCF86F00DED25E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B35B68D11FCF86F00DED25E /* DetailViewController.m */; };
 		1B35B69011FCF86F00DED25E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B35B68E11FCF86F00DED25E /* DetailViewController.xib */; };
 		1B93188D11FCDF9500A69D5F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B93188C11FCDF9500A69D5F /* CustomCell.m */; };
@@ -25,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		18FF4FD5120759BA00BEEADD /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
+		1B033FF71209208A00F9B984 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1B033FF81209208A00F9B984 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1B033FFB1209209700F9B984 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1B35B68C11FCF86F00DED25E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		1B35B68D11FCF86F00DED25E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1B35B68E11FCF86F00DED25E /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailViewController.xib; path = Classes/DetailViewController.xib; sourceTree = "<group>"; };
@@ -55,6 +60,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				1B033FFC1209209700F9B984 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1B033FF71209208A00F9B984 /* Reachability.h */,
+				1B033FF81209208A00F9B984 /* Reachability.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* RSS_ReaderAppDelegate.h */,
@@ -125,6 +133,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				1B033FFB1209209700F9B984 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				1B93188D11FCDF9500A69D5F /* CustomCell.m in Sources */,
 				1B35B68F11FCF86F00DED25E /* DetailViewController.m in Sources */,
+				1B033FF91209208A00F9B984 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
