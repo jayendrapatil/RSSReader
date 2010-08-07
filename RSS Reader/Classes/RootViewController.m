@@ -1,13 +1,5 @@
-//
-//  RootViewController.m
-//  RSS Reader
-//
-//  Created by Rishabh Dayal on 7/7/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
-//
-
 #import "RootViewController.h"
-#import "ProceduralExampleViewController.h"
+
 #import "CustomCell.h" 
 #import "DetailViewController.h"
 #import "Reachability.h"

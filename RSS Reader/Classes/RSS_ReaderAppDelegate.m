@@ -1,11 +1,3 @@
-//
-//  RSS_ReaderAppDelegate.m
-//  RSS Reader
-//
-//  Created by Rishabh Dayal on 7/7/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
-//
-
 #import "RSS_ReaderAppDelegate.h"
 #import "RootViewController.h"
 
