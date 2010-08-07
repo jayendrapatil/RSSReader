@@ -23,16 +23,35 @@
 //	[thisVC release];
 //	
 	
-	//NSString *urlString = @"http://www.mckinseyquarterly.com/Economic_Studies/Country_Reports/Indias_urbanization_A_closer_look_2640?gp=1";
 	NSString *encodedUrl = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-	
 	NSURL *url = [NSURL URLWithString:encodedUrl];
 	NSError *theNetworkError;
-	NSString *content = [NSString stringWithContentsOfURL:url encoding:NSASCIIStringEncoding error:&theNetworkError];
-	//lblText.text = content;
-	NSLog(@"server returned data: >|%@|<", content);
+	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSASCIIStringEncoding error:&theNetworkError];
+	
+	if (response != nil)
+	{
+		NSString *storyContent;
+		NSString *wordstart = @"<div class=\"storyContent\" id=\"storyContent\">";
+		NSScanner *scanner = [NSScanner scannerWithString:response];
+		BOOL found = FALSE;
+		while (! [scanner isAtEnd]) {
+			if ([scanner scanUpToString:wordstart intoString:NULL] && 
+				[scanner scanString:wordstart intoString:NULL]	 &&
+				[scanner scanUpToString:@"</div>" intoString:&storyContent]
+				) {
+				NSLog(@"Possible answer: %@", storyContent);
+				found = TRUE;
+			}
+		}
+		if (! found) {
+			NSLog(@"No definition for %@ found",wordstart);
+		}
+		[webView loadHTMLString:storyContent baseURL:nil];
+	} 
+	
 	webView.scalesPageToFit = YES ;
-	[webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
+	
+	//[webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
 	[webView release];
 
 }
