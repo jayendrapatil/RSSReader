@@ -7,6 +7,7 @@
 //
 
 #import "CustomCell.h"
+#import "asyncimageview.h"
 
 
 @implementation CustomCell
@@ -16,8 +17,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 	reuseIdentifier:(NSString *)reuseIdentifier {
-	if (self = [super initWithFrame:frame
-					reuseIdentifier:reuseIdentifier]) {
+	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
 		// Initialization code
 	}
 	return self;

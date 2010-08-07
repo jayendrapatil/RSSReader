@@ -11,6 +11,7 @@
 #import "CustomCell.h" 
 #import "DetailViewController.h"
 #import "Reachability.h"
+#import "AsyncImageView.h"
 
 
 @implementation RootViewController
@@ -55,30 +56,34 @@
     
 	static NSString *CustomCellIdentifier = @"CustomCellIdentifier ";
 	
-	CustomCell *cell = (CustomCell *)[tableView
-									  dequeueReusableCellWithIdentifier: CustomCellIdentifier];
+	CustomCell *cell = (CustomCell *)[tableView dequeueReusableCellWithIdentifier: CustomCellIdentifier];
 	if (cell == nil) {
-		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell"
-													 owner:self options:nil];
+		NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
 		for (id oneObject in nib)
 			if ([oneObject isKindOfClass:[CustomCell class]])
 				cell = (CustomCell *)oneObject;
+	} else {
+			AsyncImageView* oldImage = (AsyncImageView*)
+			[cell.thumbnailImage viewWithTag:999];
+			[oldImage removeFromSuperview];
 	}
+	
+	CGRect frame;
+	frame.size.width=100; frame.size.height=70; frame.origin.x=3; frame.origin.y=0;
+	AsyncImageView* asyncImage = [[[AsyncImageView alloc] initWithFrame:frame] autorelease];
+	asyncImage.tag = 999;
+	
 	NSUInteger row = [indexPath row];
 	NSDictionary *rowData = [stories objectAtIndex:row];
 	cell.colorLabel.text = [rowData objectForKey:@"summary"];
 	cell.nameLabel.text = [rowData objectForKey:@"title"];
 	
-	NSString* imageURL = [rowData objectForKey: @"image"];
-	NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:imageURL]];
-	UIImage* image = [[UIImage alloc] initWithData:imageData];
+	NSURL *url = [NSURL URLWithString:[rowData objectForKey:@"image"]];
+	[asyncImage loadImageFromURL:url];
 	
-	cell.thumbnailImage.image = image ;
+	[cell.thumbnailImage addSubview:asyncImage];
 	
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-	
-	[imageData release];
-	[image release];
 	
     return cell;
 }
@@ -93,35 +98,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-//	UIWebView *rssWebView = [[UIWebView alloc] init];
-//	NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
-//	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
-//	[rssWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
-//	rssWebView.scalesPageToFit = YES;
-//	
-//	
-//	UIViewController *thisVC = [[UIViewController alloc] init];
-//	thisVC.view = rssWebView;
-//	thisVC.title = [[stories objectAtIndex:indexPath.row]
-//					objectForKey:@"title"];
-//	
-//	[self.navigationController pushViewController:thisVC animated:YES];
-//	
-//	[rssWebView release];
-//	[thisVC release];
-	
 	DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
 	retController.title = [[stories objectAtIndex:indexPath.row] objectForKey:@"title"];		
 	[retController setLink:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]];
 	[[self navigationController] pushViewController:retController animated:YES];
 	[retController release];
 	
-	/*
-	// code starts for curling
-	viewController = [[[ProceduralExampleViewController alloc] init] autorelease];
-	[self.navigationController pushViewController:viewController animated:YES];
-	// code ends for curling
-	*/ 
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
