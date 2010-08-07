@@ -8,3 +8,4 @@
 	git commit -a -m "Commit Message"
 	git push origin master
 		git remote add origin git@github.com:Jayendra/RSSReader.git - If error is thrown for origin not found
+4. To Revert any local changes and get the latest use - git reset --hard HEAD
