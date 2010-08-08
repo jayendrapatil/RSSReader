@@ -21,8 +21,25 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 	if ([stories count] == 0) {
+		
 		NSString * path = @"http://rss.mckinseyquarterly.com/f/100003s2f3fmpgm5lb0.rss";
-		[self parseXMLFileAtURL:path];
+		
+		NSURL *xmlURL = [NSURL URLWithString:path];
+		
+		NSString *applicationDocumentsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+		NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"feeds.xml"];
+		
+		Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
+		NetworkStatus internetStatus = [r currentReachabilityStatus];
+		
+		if (internetStatus != NotReachable) {
+			NSLog(@"Downloading from the web");
+			// Store XML feed offline
+			NSData *data = [NSData dataWithContentsOfURL:xmlURL];
+			[data writeToFile:storePath atomically:TRUE];
+		}
+		
+		[self parseXMLFileAtURL:storePath];
 	}
 	cellSize = CGSizeMake([newsTable bounds].size.width, 100);
 }
@@ -113,23 +130,10 @@
 - (void)viewDidUnload {
 }
 
-- (void)parseXMLFileAtURL:(NSString	*)URL {
+- (void)parseXMLFileAtURL:(NSString	*)storePath {
+	
 	stories = [[NSMutableArray alloc] init];
-	NSURL *xmlURL = [NSURL URLWithString:URL];
-	
-	NSString *applicationDocumentsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-	NSString *storePath = [applicationDocumentsDir stringByAppendingPathComponent:@"feeds.xml"];
-	
-	Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
-	NetworkStatus internetStatus = [r currentReachabilityStatus];
-	
-	if (internetStatus != NotReachable) {
-		NSLog(@"Downloading from the web");
-		// Store XML feed offline
-		NSData *data = [NSData dataWithContentsOfURL:xmlURL];
-		[data writeToFile:storePath atomically:TRUE];
-	}
-	
+
 	// Retrieve XML data from File Path
 	NSData *storedContents = [[[NSData alloc] initWithContentsOfFile:storePath] autorelease];
 	
