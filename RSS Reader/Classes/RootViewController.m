@@ -22,7 +22,7 @@
     [super viewDidAppear:animated];
 	if ([stories count] == 0) {
 		
-		NSString * path = @"http://rss.mckinseyquarterly.com/f/100003s2f3fmpgm5lb0.rss";
+		NSString * path = @"http://rss.mckinseyquarterly.com/f/";
 		
 		NSURL *xmlURL = [NSURL URLWithString:path];
 		
