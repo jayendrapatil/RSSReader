@@ -2,28 +2,25 @@
 
 
 @implementation DetailViewController
-@synthesize webView, link;
+@synthesize webView, imageView, titleLabel, story, date;
 
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
++ (DetailViewController *) DetailViewControllerWithStory:(NSMutableDictionary *) storyItem {
+	DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+	retController.story = storyItem ;
+	return [retController autorelease];
+}
+
 - (void)viewDidLoad {
-	//NSString *urlString = [NSString stringWithFormat:[[stories objectAtIndex:indexPath.row] objectForKey:@"link"]];
-//	NSString *encodedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]; 
-//	[rssWebView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
-//	rssWebView.scalesPageToFit = YES;
-//	
-//	
-//	UIViewController *thisVC = [[UIViewController alloc] init];
-//	thisVC.view = rssWebView;
-//	thisVC.title = [[stories objectAtIndex:indexPath.row]
-//					objectForKey:@"title"];
-//	
-//	[self.navigationController pushViewController:thisVC animated:YES];
-//	
-//	[rssWebView release];
-//	[thisVC release];
-//	
 	
-	NSString *encodedUrl = [link stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+	NSData* imageData = [[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:[story objectForKey:@"image"]]];
+	UIImage* image = [[UIImage alloc] initWithData:imageData];
+	[imageView setImage:image];
+	
+	[titleLabel setText:[story objectForKey:@"title"]];
+	[date setText:[story objectForKey:@"date"]];
+	
+	
+	NSString *encodedUrl = [[story objectForKey:@"link"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	NSURL *url = [NSURL URLWithString:encodedUrl];
 	NSError *theNetworkError;
 	NSString *response = [NSString stringWithContentsOfURL:url encoding:NSASCIIStringEncoding error:&theNetworkError];
@@ -39,7 +36,7 @@
 				[scanner scanString:wordstart intoString:NULL]	 &&
 				[scanner scanUpToString:@"</div>" intoString:&storyContent]
 				) {
-				NSLog(@"Possible answer: %@", storyContent);
+				NSLog(@"Story Content: %@", storyContent);
 				found = TRUE;
 			}
 		}
@@ -53,6 +50,8 @@
 	
 	//[webView loadRequest:[NSURLRequest requestWithURL: [NSURL URLWithString:encodedUrl]]];
 	[webView release];
+	[imageData release];
+	[image release];
 
 }
 
@@ -80,7 +79,6 @@
 }
 
 - (void)dealloc {
-	[lblText release];
     [super dealloc];
 }
 

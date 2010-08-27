@@ -107,11 +107,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	DetailViewController* retController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
-	retController.title = [[stories objectAtIndex:indexPath.row] objectForKey:@"title"];		
-	[retController setLink:[[stories objectAtIndex:[indexPath row]] objectForKey:@"link"]];
-	[[self navigationController] pushViewController:retController animated:YES];
-	[retController release];
+	DetailViewController* detailController = [DetailViewController DetailViewControllerWithStory:[stories objectAtIndex:indexPath.row]];
+	[[self navigationController] pushViewController:detailController animated:YES];
 	
 }
 
@@ -169,6 +166,7 @@
 		[images appendString:[attributeDict objectForKey:@"url"]];
 	}
 }
+
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName { 
 	if ([elementName isEqualToString:@"item"]) { 
